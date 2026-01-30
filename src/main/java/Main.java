@@ -112,7 +112,7 @@ InputStream getRandomAvatarStream() throws IOException, InterruptedException {
 
         return response.body();
         //returns the body?? idfk that's all i got
-    }// instance variable
+    }// instance method
 }
 
 void showAvatar(InputStream imageStream) {
