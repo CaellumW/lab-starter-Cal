@@ -1,6 +1,6 @@
 import core.CardStack;
 
-public void Main() {
+public void main() {
     System.out.println("Welcome to blackjack. First player will be the 'player' and second player will be the 'dealer'");
     System.out.println("You will both be dealt a hand of two cards to start with, and you will both know each other's hands");
     System.out.println("Currently, the hands are as follows:");
@@ -56,4 +56,5 @@ public int dealerHandValue(){
         CardStack.dealerStackValue();
         return CardStack.dealerHandValue;
     }
+
 
