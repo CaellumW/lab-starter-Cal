@@ -1,19 +1,28 @@
+import java.io.Console;
+import java.io.Console.*;
+
 public class Main {
 
-    static void main() {
 
-        /*
-             Place your main game logic here.
-             This is the ONLY code file that should have any reference to the Console class.
-
-             The basic flow of the game is as follows:
-
-             1. Prompt for player names
-             2. Deal a shuffled deck evenly to each of the players
-             3. While the players have cards and wish to continue:
-                 b. All players draw one card and reveal them
-                 c. The player with the higher card wins the round (or it's a tie)
-         */
+static void main() {
+    Console.Main();
+    Console.PlayerTurn();
+    int playerHand = Console.playerHandValue();
+    while (playerHand>=0){
+        if (playerHand<21){
+            Console.PlayerTurn();
+        }
+        while (playerHand>=21){
+            if (playerHand == 21){
+                System.out.println("Player has reached 21, and won");
+                break;
+            }
+            else if (playerHand>21){
+                System.out.println("Player has bust. Dealer wins.");
+                break;
+            }
+        }
+    }
 
     }
 }
