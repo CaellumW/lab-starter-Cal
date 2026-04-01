@@ -23,8 +23,9 @@ public class Main {
         //       There must be no duplicates, and the items must be sorted alphabetically
         List<String> CountryMoney = bigMacs.stream().filter(b -> b.year()==2000).distinct().sorted((b1, b2) -> (b1.country()).compareTo(b2.country())).map(b -> b.country() + ": " + b.localPrice()).toList(); // <---- FINISH THIs
 
+        // HOLY THATS A LONG LINE
 // a little more complicated this time, still a list and still filter (this might negate the distinct function? <-- IT DOESN'T, i needed this.)
-// but then an added distinct function to remove duplicates, sorted function to alphabetise it, and i haven't figured out the formatting
+// but then an added distinct function to remove duplicates, sorted function to alphabetise it, and formatted with a mapping function ^-^
 
         // TODO: Print the most recent 5 years of data for Canada
         System.out.println(bigMacs.stream().filter(b -> b.year()>=2017).filter(b -> Objects.equals(b.country(), "Canada")).toList()); // DONE

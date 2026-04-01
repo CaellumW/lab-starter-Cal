@@ -26,4 +26,5 @@ public class InDenialLogger implements Logger{
         String responseMsg = RandomResponse(Responses);
         return (Instant.now().toString() + "[" + level + "]" + responseMsg);
     }
+    // this isn't entirely an in-denial logger but I hope the creative liberty I took with it is fine
 }
